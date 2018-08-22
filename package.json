@@ -1,7 +1,8 @@
 {
-  "name": "vv-plugins",
+  "name": "vv-ui-plugins",
   "version": "0.1.0",
-  "private": true,
+  "description": "vue vue-plugin vue-ui vv-project",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -9,7 +10,13 @@
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:Tamamoran/VV-UI-Plugins.git"
+  },
+  "homepage": "https://github.com/Tamamoran/VV-UI-Plugins",
   "dependencies": {
+    "postcss-px2rem": "^0.3.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {
@@ -47,7 +54,10 @@
   },
   "postcss": {
     "plugins": {
-      "autoprefixer": {}
+      "autoprefixer": {},
+      "postcss-px2rem": {
+        "remUnit": 40
+      }
     }
   },
   "browserslist": [
